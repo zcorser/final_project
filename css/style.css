@@ -1,0 +1,235 @@
+body {
+    background: #fbebcb;
+    color: #000000;
+    font-size: 25px;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    /* svg header image code requires wrap element position to be relative */
+    position: relative;
+    font-size: 25px;
+    padding: 1em;
+    width: 100%;
+}
+
+/* <!-- The following code was created in shapedivider.app - a site that allows you to make wavy svg section separators --> */
+.custom-shape-divider-top-1732667416 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+}
+
+.custom-shape-divider-top-1732667416 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 300px;
+}
+
+.custom-shape-divider-top-1732667416 .shape-fill {
+    fill: #F2C373;
+}
+
+.logo {
+    display: grid;
+    justify-items: center;
+    margin-top: 1em;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 800;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.skip {
+    position: absolute;
+    top: -40px;
+}
+
+.skip:focus {
+    position: static;
+    top: 20px;
+    width: auto;
+    height: auto;
+}
+
+li a:link {
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: #142111;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 1.25em;
+    line-height: 1.25em;
+    position: fixed;
+    z-index: 100;
+}
+
+nav>ul>li {
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 3em;
+    font-weight: 600;
+    background-color: #de7f50;
+    border: 2px solid #ecc57b;
+    z-index: 100;
+}
+
+li a:hover,
+li a:focus {
+    text-decoration: underline;
+}
+
+li a:visited {
+    color: #824e35;
+}
+
+li a:hover {
+    color: #b8fac1;
+}
+
+ul>li.active {
+    font-weight: bold;
+    background-color: #f8e584;
+    text-decoration: underline;
+}
+
+h1 {
+    color: #344b38;
+    font-size: 2em;
+    font-weight: 800;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: 600;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 500;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-top: 1.25em;
+    margin-bottom: .75em;
+}
+
+p {
+    font-size: 25px;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fdfbf6;
+    border: 2px dotted #de7e4f;
+    border-radius: 25px;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1.25em;
+    margin-bottom: 1em;
+    line-height: 1.25em;
+}
+img {
+    border: 3px dotted #de7e4f;
+    padding: .75em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+img.index {
+    height: 300px;
+}
+
+#logo {
+    border: none;
+    padding: 0px;
+    width: 100%;
+    max-width: 400px;
+    transform: translateX(0px);
+    position: static;
+}
+
+ol {
+    font-size: 20px;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-top: 1.25em;
+    line-height: 1.25em;
+    margin-left: 10%;
+}
+ul.page_resources>li {
+    font-size: 22px;
+    list-style-position: inside;
+    background-color: #fdfbf6;
+    border: 2px dotted #de7e4f;
+    border-radius: 25px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    list-style-type: disc;
+}
+footer {
+    display: flex;
+    background-color: #F2C373;
+    color: #ffffff;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+section.error {
+    margin-bottom: 1em;
+}
+
+footer a {
+    color: #344b38;
+}
+
+@media only screen and (min-width: 900px) {
+    .nav>ul {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .nav>ul>li {
+        font-size: 23px;
+        padding: 16px;
+    }
+}
+body {
+    background: #fdfbf6;
+    background-image: url("/images/background_image_3.svg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
+    color: #344b38;
+}
+
+p {
+    font-size: 24px;
+}
+

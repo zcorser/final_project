@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring Resource Page</title>
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a class="skip" href ="#main">Skip to Main Content</a>
+    <header>
+        <!-- The following Div was created in shapedivider.app - a site that allows you to make wavy svg section separators -->
+        <div class="custom-shape-divider-top-1732667416">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="logo">
+            <img id="logo" src="images/orange_cat_1.svg" alt="Cat">
+            <div class="title">Breathing Purrrfectly</div>
+        </div>
+        <nav class ="nav">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "about_page.html">About Me!</a></li>
+                <li><a href = "resources_page.html">Resources</a></li>
+                <li class="active"><a href = "tutorials_page.html">Tutorial</a></li>
+                <li><a href = "community_support_page.html">Community Support</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class = "gallery">
+        <a href = "images/step1.jpg" target="blank" data-lightbox="step 1" data-title="step 1" data-alt="remove cap and shake the inhaler">
+            <img src="images/step1.jpg" width = "200" alt="remove cap and shake the inhaler">
+        </a>
+        <a href = "images/step2.jpg" target="blank" data-lightbox="step 2">
+            <img src="images/step2.jpg"  width = "200" alt="step 2">
+        </a>
+
+        <a href = "images/step3.jpg" target="blank" data-lightbox="step 3">
+            <img src="images/step3.jpg" width = "200" alt="step 3">
+        </a>
+        <a href = "images/step4.jpg" target="blank" data-lightbox="step 4">
+            <img src="images/step4.jpg" width = "200" alt="step 4">
+        </a>
+        <a href = "images/step5.jpg" target="blank" data-lightbox="step 5">
+            <img src="images/step5.jpg" width = "200" alt="step 5">
+        </a>
+    </main>
+    <footer>
+        <div>BreathingPurrrfectly | </div>
+        <div><a href="index.html">Home Page </a></dov>
+        <a href="https://www.vecteezy.com/free-vector/animals">Animals Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/vacation">Vacation Vectors by Vecteezy</a>
+        <!-- Code below taken from CodexWorld. -->
+        <div>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</dov>
+        </footer>
+        <script src="dist/js/lightbox-plus-jquery.js">lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+    })
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+</body>
+
+</html>
