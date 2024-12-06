@@ -7,7 +7,7 @@ body {
 
 header {
     /* svg header image code requires wrap element position to be relative */
-    position: relative;
+    position: fixed;
     font-size: 25px;
     padding: 1em;
     width: 100%;
@@ -66,7 +66,7 @@ li a:link {
     color: #142111;
 }
 
-.nav {
+nav {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -207,11 +207,19 @@ footer a {
 }
 
 @media only screen and (min-width: 900px) {
-    .nav>ul {
+    nav ul {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
     }
+    /* nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 1.25em;
+        line-height: 1.25em;
+        position: fixed;
+        z-index: 100; */
 
     .nav>ul>li {
         font-size: 23px;
