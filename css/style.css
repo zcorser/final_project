@@ -228,7 +228,7 @@ footer a {
 }
 body {
     background: #fdfbf6;
-    background-image: url("/images/background_image_3.svg");
+    background-image: url("../images/background_image_3.svg");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
