@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,37 +19,53 @@
         <nav class ="nav">
             <button id="menu-button" aria-label="Toggle menu">☰</button>
             <ul id="nav-list">
-                <li><a href = "index.html">Home</a></li>
+                <li class="active"><a href = "index.html">Home</a></li>
                 <li><a href = "about_page.html">About Me!</a></li>
                 <li><a href = "resources_page.html">Resources</a></li>
-                <li class="active"><a href = "tutorials_page.html">Tutorial</a></li>
+                <li><a href = "tutorials_page.html">Tutorial</a></li>
                 <li><a href = "community_support_page.html">Community Support</a></li>
-
             </ul>
         </nav>
-        <div id="logo">
-            <img class="logo" src="images/orange_cat_1.svg" alt="Cat">
-            <div class="title">Breathing Purrrfectly</div>
-        </div>
-    </header>
-    <main class = "gallery">
-        <a href = "images/step1.jpg" target="blank" data-lightbox="step 1" data-title="step 1" data-alt="remove cap and shake the inhaler">
-            <img src="images/step1.jpg" width = "200" alt="remove cap and shake the inhaler">
-        </a>
-        <a href = "images/step2.jpg" target="blank" data-lightbox="step 2">
-            <img src="images/step2.jpg"  width = "200" alt="step 2">
-        </a>
 
-        <a href = "images/step3.jpg" target="blank" data-lightbox="step 3">
-            <img src="images/step3.jpg" width = "200" alt="step 3">
-        </a>
-        <a href = "images/step4.jpg" target="blank" data-lightbox="step 4">
-            <img src="images/step4.jpg" width = "200" alt="step 4">
-        </a>
-        <a href = "images/step5.jpg" target="blank" data-lightbox="step 5">
-            <img src="images/step5.jpg" width = "200" alt="step 5">
-        </a>
-    </main>
+    </header>
+    <!-- Parallax Section -->
+    <div class="parallax">
+        <!-- The .parallax-background div is added within the .parallax container to host the parallax background image. -->
+        <!-- <div class="parallax-background"></div> -->
+        <div class="content">
+            <main class="container" id="main">
+                <section class="main">
+                    <div id="logo">
+                        <img class="logo" src="images/orange_cat_1.svg" alt="Cat">
+                        <div class="title">Breathing Purrrfectly</div>
+                    </div>
+                <section class = "gallery">
+                    <a href = "images/Tutorial1.png" target="blank" data-lightbox="Intro" data-title="AeroKat Tutorial" data-alt="Aerokat Tutorial Intro Slide">
+                        <img src="images/Tutorial1.png" width = "200" alt="Introduction Slide">
+                    </a>
+                    <a href = "images/Tutorial2.png" target="blank" data-lightbox="Tips & Tricks">
+                        <img src="images/Tutorial2.png"  width = "200" alt="Tips & Tricks">
+                    </a>
+
+                    <a href = "images/Tutorial3.png" target="blank" data-lightbox="step 1">
+                        <img src="images/Tutorial3.png" width = "200" alt="step 1">
+                    </a>
+                    <a href = "images/Tutorial4.png" target="blank" data-lightbox="step 2">
+                        <img src="images/Tutorial4.png" width = "200" alt="step 2">
+                    </a>
+                    <a href = "images/Tutorial5.png" target="blank" data-lightbox="step 3">
+                        <img src="images/Tutorial5.png" width = "200" alt="step 3">
+                    </a>
+                    <a href = "images/Tutorial6.png" target="blank" data-lightbox="step 4">
+                        <img src="images/Tutorial6.png" width = "200" alt="step 4">
+                    </a>
+                    <a href = "images/Tutorial7.png" target="blank" data-lightbox="Tutorial Complete">
+                        <img src="images/Tutorial7.png" width = "200" alt="Tutorial Complete">
+                    </a>
+                </section>
+            </main>
+        </div>
+    </div>
     <footer>
         <div>BreathingPurrrfectly | </div>
         <div><a href="index.html">Home Page</a></div>
