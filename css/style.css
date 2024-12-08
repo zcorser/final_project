@@ -261,26 +261,25 @@ footer a {
     }
     .parallax {
         position: relative;
-        height: 350vh;
-        overflow: hidden;
-        background-image: url("../images/background_image_3.svg");
-        background-size: cover;
-        background-attachment: scroll;
-        background-position: center;
+        height: 200vh;
+        overflow: scroll;
+        background-image: url("../images/background_image_4.5.svg");
+        background-repeat: repeat-y;
+        background-position-x: center;
     }
     /* Parallax code from UMGPT prompt: I want to make it so my background-image on my page scrolls slower than the content overlaying it for a parallax effect. I can't just set the background-image as fixed because the image will be cut off and I want to be able to view the entire image by scrolling but also want to have the content scroll past the image. */
     /* .parallax-background { */
         /* content: ""; */
-        /* background-image: url("../images/background_image_3.svg");
+        /* background-image: url("../images/background_image_3.5.svg");
         background-size: cover;
         background-attachment: fixed;
-        position: absolute; */
-        /* top: 0; */
-        /* left: 0; */
-        /* width: 100%; */
-        /* height: 100%;  Ensure height is sufficient for scrolling effect */
-        /* z-index: -1; */
-        /* transform: translateZ(0);  Ensures GPU acceleration for smoother scrolling */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; */
+        /* height: 100%;   Ensure height is sufficient for scrolling effect */
+        /* z-index: 1; */
+       /* transform: translateZ(0);   Ensures GPU acceleration for smoother scrolling */
     /* } */
     .content {
         position: relative;
@@ -305,7 +304,7 @@ footer a {
     }
 
     body {
-        background: #fbebcb;
+        background: #fbf6ed;
         /* background-image: url("../images/background_image_3.svg"); */
         /* background-size: cover; */
         /* background-position: center; */

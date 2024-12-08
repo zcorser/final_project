@@ -14,11 +14,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
       // JavaScript for Parallax Effect
+  // window.addEventListener('scroll', function () {
+  //   const parallax = document.querySelector('.parallax-background');
+  //   if (parallax) {
+  //     const offset = window.scrollY;
+  //     parallax.style.backgroundPositionY = '${offset * 0.5}px'; // Adjust the multiplier to control the parallax speed
+  //   }
+  // });
   window.addEventListener('scroll', function () {
-    const parallax = document.querySelector('.parallax');
-    if (parallax) {
+    const content = document.querySelector('.parallax');
+    if (content) {
       const offset = window.scrollY;
-      parallax.style.backgroundPositionY = '${offset * 0.5}px'; // Adjust the multiplier to control the parallax speed
+      content.style.backgroundPositionY = '${offset * 1}px'; // Adjust the multiplier to control the parallax speed
     }
   });
 });
