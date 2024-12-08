@@ -1,8 +1,15 @@
-document.getElementById("body").onscroll = function myFunction() {  
-    var scrolltotop = document.scrollingElement.scrollTop;
-    var target = document.getElementById("main1");
-    var xvalue = "center";
-    var factor = 0.5;
-    var yvalue = scrolltotop * factor;
-    target.style.backgroundPosition = xvalue + " " + yvalue + "px";
-  }
+document.getElementById("year").innerHTML = new Date().getFullYear();
+// JavaScript to handle the toggling of the navigation menu
+document.addEventListener('DOMContentLoaded', function () {
+  const menuButton = document.getElementById('menu-button');
+  const navList = document.getElementById('nav-list');
+
+  if (menuButton && navList) { // Check if elements are found
+    menuButton.addEventListener('click', function () {
+        if (navList.style.display === 'none' || navList.style.display === '') {
+            navList.style.display = 'flex';
+        } else {
+            navList.style.display = 'none';
+        }
+    });
+}});
