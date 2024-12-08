@@ -3,6 +3,8 @@ body {
     color: #344b38;
     font-size: 25px;
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -144,6 +146,7 @@ h1 {
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 1em;
 }
 
 h2 {
@@ -172,10 +175,12 @@ p {
     padding-left: 1em;
     padding-right: 1em;
     text-align: left;
+    margin-top: 1em;
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 1em;
     line-height: 1.25em;
+    width: 90%;
 }
 img {
     border: 3px dotted #de7e4f;
@@ -206,8 +211,8 @@ ul.page_resources>li {
     border-radius: 25px;
     padding-left: 1em;
     padding-right: 1em;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 2%;
     list-style-type: disc;
 }
@@ -240,16 +245,48 @@ footer a {
     nav>ul {
         width: 100%;
         display: flex;
-        left: 0%;
-        top: 2%;
+        /* left: 0%;
+        top: 2%; */
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-around;
         background-color: transparent;
+        position: static;
+        top: auto;
+        left: auto;
     }
     .nav>ul>li {
         font-size: 23px;
         padding: 16px;
+    }
+    .parallax {
+        position: relative;
+        height: 350vh;
+        overflow: hidden;
+        background-image: url("../images/background_image_3.svg");
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center;
+    }
+    /* Parallax code from UMGPT prompt: I want to make it so my background-image on my page scrolls slower than the content overlaying it for a parallax effect. I can't just set the background-image as fixed because the image will be cut off and I want to be able to view the entire image by scrolling but also want to have the content scroll past the image. */
+    /* .parallax-background { */
+        /* content: ""; */
+        /* background-image: url("../images/background_image_3.svg");
+        background-size: cover;
+        background-attachment: fixed;
+        position: absolute; */
+        /* top: 0; */
+        /* left: 0; */
+        /* width: 100%; */
+        /* height: 100%;  Ensure height is sufficient for scrolling effect */
+        /* z-index: -1; */
+        /* transform: translateZ(0);  Ensures GPU acceleration for smoother scrolling */
+    /* } */
+    .content {
+        position: relative;
+        z-index: 1;
+        padding: 1em;
+        min-height: 100vh; /* Ensure content is at least as tall as the viewport */
     }
     div#logo {
         display: grid;
@@ -260,21 +297,21 @@ footer a {
     }
     img.logo {
         border: none;
+        margin-top: 0%;
         padding: 0px;
         width: 100%;
         max-width: 300px;
         transform: translateX(0px);
-        position: static;
     }
 
     body {
-        background: #fdfbf6;
-        background-image: url("../images/background_image_3.svg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: scroll;
+        background: #fbebcb;
+        /* background-image: url("../images/background_image_3.svg"); */
+        /* background-size: cover; */
+        /* background-position: center; */
+        /* background-attachment: scroll; */
         width: 100%;
-        height: 100%;
+        height: auto;
         overflow-y: visible;
         color: #344b38;
     }
@@ -285,8 +322,11 @@ footer a {
         margin-top: 0%;
         width: 50%;
     }
+    h2 {
+        margin-top: 1em;
+    }
     ul {
-        width: 80%;
+        width: 70%;
     }
     p {
         font-size: 24px;
@@ -297,7 +337,7 @@ footer a {
     }
     footer {
         font-size: 28px;
-        position: absolute;
+        position: relative;
         width: 100%;
     }
 }

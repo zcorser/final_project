@@ -12,4 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
             navList.style.display = 'none';
         }
     });
-}});
+  }
+      // JavaScript for Parallax Effect
+  window.addEventListener('scroll', function () {
+    const parallax = document.querySelector('.parallax');
+    if (parallax) {
+      const offset = window.scrollY;
+      parallax.style.backgroundPositionY = '${offset * 0.5}px'; // Adjust the multiplier to control the parallax speed
+    }
+  });
+});
