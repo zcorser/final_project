@@ -152,6 +152,9 @@ h1.tutorial {
     margin-top: 5%;
     font-size: 3em;
 }
+h1.fourofour {
+    width: 100%;
+}
 
 h2 {
     font-size: 1.7em;
@@ -211,6 +214,15 @@ img.logo {
 img.article {
     height: 300px;
 }
+img#fourofour {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 .gallery{
     border: 3px solid #de7f50;
     width: 90%;
@@ -240,6 +252,22 @@ ul.page_resources>li {
     margin-bottom: 2%;
     list-style-type: disc;
 }
+ul.fourofour {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    justify-items: center;
+    font-size: 22px;
+    background-color: #fdfbf6;
+    border: 2px dotted #de7e4f;
+    border-radius: 25px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    text-align: center;
+}
 footer {
     display: flex;
     background-color: #F2C373;
@@ -251,6 +279,13 @@ footer {
 }
 section.error {
     margin-bottom: 1em;
+}
+section.resources {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    justify-items: center;
+    justify-content: center;
 }
 
 footer a {
@@ -365,5 +400,13 @@ footer a {
         font-size: 28px;
         position: relative;
         width: 100%;
+    }
+}
+/* Prefers-reduced-motion query to remove parallax effect */
+@media (prefers-reduced-motion: reduce) {
+    .parallax {
+        background-attachment: scroll;
+        background-position: center; /* Default to center position */
+        /* Remove transitions or animations if any */
     }
 }
