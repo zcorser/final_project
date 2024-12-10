@@ -182,6 +182,11 @@ p {
     line-height: 1.25em;
     width: 90%;
 }
+div #fb-page {
+    /* display: block; */
+    width: 70%;
+    z-index: 1000;
+}
 img {
     border: 3px dotted #de7e4f;
     padding: .75em;
